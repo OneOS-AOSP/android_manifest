@@ -33,10 +33,10 @@
   <project path="android" name="android_manifest" remote="ONE-AOSP" />
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="android_frameworks_base" remote="ONE-AOSP-GITLAB" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ONE-AOSP-GITLAB" revision="11" />
 
   <!-- Hardware -->
-  <project path="hardware/one/interfaces" name="android_hardware_one_interfaces" remote="ONE-AOSP" revision="11" />
+  <project path="hardware/one/interfaces" name="android_hardware_one_interfaces" remote="ONE-AOSP" />
 
   <!-- Packages -->
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ONE-AOSP" />
