@@ -2,18 +2,20 @@
 <manifest>
 
   <!-- ONEOS AOSP remote -->
-  <remote  name="oneaosp"
-           fetch="git@github.com:OneOS-AOSP"/>
+  <remote  name="ONE-AOSP"
+           fetch="git@github.com:OneOS-AOSP"
+           revision="11"
+           sync-j="16" />
            
-  <remote  name="oneaospgitlab"
-           fetch="git@gitlab.com/OneOS-AOSP"/>
-
+  <remote  name="ONE-AOSP-GITLAB"
+           fetch="git@gitlab.com:OneOS-AOSP"/>
   <!-- Device remote -->
-  <remote  name="onedevice"
-           fetch="git@github.com:OneOS-AOSP-Devices"/>
+  <remote  name="ONE-device"
+           fetch="git@github.com:OneOS-AOSP-Devices"
+           revision="11" />
   
     <!-- Build -->
-  <project path="build/make" name="android_build" remote="oneaosp" revision="11" >
+  <project path="build/make" name="android_build" remote="ONE-AOSP" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -22,36 +24,36 @@
     <linkfile src="target" dest="build/target"/>
     <linkfile src="tools" dest="build/tools"/>
   </project>
-  <project path="build/soong" name="android_build_soong" remote="oneaosp" revision="11" >
+  <project path="build/soong" name="android_build_soong" remote="ONE-AOSP" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="android" name="android_manifest" remote="oneaosp" />
+  <project path="android" name="android_manifest" remote="ONE-AOSP" />
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="android_frameworks_base" remote="oneaospgitlab" revision="11" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ONE-AOSP-GITLAB" />
 
   <!-- Hardware -->
-  <project path="hardware/one/interfaces" name="android_hardware_one_interfaces" remote="oneaosp" revision="11" />
+  <project path="hardware/one/interfaces" name="android_hardware_one_interfaces" remote="ONE-AOSP" />
 
   <!-- Packages -->
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="oneaosp" revision="11" />
-  <project path="packages/apps/OneOSMenu" name="android_packages_apps_OneOSMenu" remote="oneaosp" revision="11" /> 
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="oneaosp" revision="11" /> 
-  <project path="packages/apps/OneOSPapers" name="android_packages_apps_OneOSPapers" remote="oneaosp" revision="11" />  
-  <project path="packages/oneos/fonts" name="android_packages_oneos_fonts" remote="oneaosp" revision="11" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ONE-AOSP" />
+  <project path="packages/apps/OneOSMenu" name="android_packages_apps_OneOSMenu" remote="ONE-AOSP" /> 
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ONE-AOSP" /> 
+  <project path="packages/apps/OneOSPapers" name="android_packages_apps_OneOSPapers" remote="ONE-AOSP" />  
+  <project path="packages/oneos/fonts" name="android_packages_oneos_fonts" remote="ONE-AOSP" />
 
   <!-- Prebuilts -->
-  <project path="prebuilts/prebuiltapks" name="android_prebuilts_prebuiltapks" remote="oneaospgitlab" revision="master" />
+  <project path="prebuilts/prebuiltapks" name="android_prebuilts_prebuiltapks" remote="ONE-AOSP-GITLAB" revision="master" />
 
   <!-- Sepolicy -->
-  <project path="device/one/sepolicy" name="android_device_one_sepolicy" remote="oneaosp" revision="11" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="oneaosp" revision="11" />
+  <project path="device/one/sepolicy" name="android_device_one_sepolicy" remote="ONE-AOSP" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="ONE-AOSP" />
 
   <!-- Vendor -->
-  <project path="vendor/oneos" name="android_vendor_oneos" remote="oneaosp" revision="11"/>
-  <project path="vendor/themes" name="android_vendor_themes" remote="oneaospgitlab" revision="11"/>
-  <project path="vendor/google/gms" name="vendor_google_gms" remote="oneaospgitlab" revision="11" />
-  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="oneaospgitlab" revision="11" />
+  <project path="vendor/oneos" name="android_vendor_oneos" remote="ONE-AOSP" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="ONE-AOSP-GITLAB" revision="11"/>
+  <project path="vendor/google/gms" name="vendor_google_gms" remote="ONE-AOSP-GITLAB" revision="11" />
+  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="ONE-AOSP-GITLAB" revision="11" />
 </manifest>
