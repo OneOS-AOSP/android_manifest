@@ -36,7 +36,7 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="ONE-AOSP-GITLAB" />
 
   <!-- Hardware -->
-  <project path="hardware/one/interfaces" name="android_hardware_one_interfaces" remote="ONE-AOSP" />
+  <project path="hardware/one/interfaces" name="android_hardware_one_interfaces" remote="ONE-AOSP" revision="11" />
 
   <!-- Packages -->
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ONE-AOSP" />
