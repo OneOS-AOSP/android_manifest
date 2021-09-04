@@ -1,12 +1,12 @@
-Getting started with NusantaraProject
+Getting started with ONEOS AOSP
 ====================
 
-![NusantaraProject](https://github.com/NusantaraProject-ROM/Nusantara/blob/master/goodies/banner.png?raw=true)
+![ONEOS AOSP](https://one.revtechs.me/assets/img/logo.png)
 
 Initialize Local Repository
 -------------
 ```bash
-  repo init -u https://github.com/NusantaraProject-ROM/android_manifest -b 11
+  repo init -u git@github.com:OneOS-AOSP/android_manifest -b 11
 ```
 
 Syncing Repository
@@ -19,6 +19,6 @@ Lunch Command
 -------------
 ```bash
   . build/envsetup.sh
-  lunch nad_<device_codename>-buildtype
-  mka nad
+  lunch one_<device_codename>-buildtype
+  mka one
 ```

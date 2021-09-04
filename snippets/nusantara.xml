@@ -25,21 +25,6 @@
            fetch="https://gitlab.com/" />
   
     <!-- Build -->
-  <project path="build/make" name="android_build" remote="nad" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
-    <linkfile src="target" dest="build/target"/>
-    <linkfile src="tools" dest="build/tools"/>
-  </project>
-  <project path="build/soong" name="android_build_soong" remote="nad" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-
-  <project path="android" name="android_manifest" remote="nad" />
   <project path="art" name="android_art" remote="nad" />
   <project path="bionic" name="android_bionic" remote="nad" />
   <project path="build/blueprint" name="android_build_blueprint" remote="nad" />
@@ -64,7 +49,6 @@
 
   <!-- Frameworks -->
   <project path="frameworks/native" name="android_frameworks_native" remote="nad" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="nad" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="nad" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="nad" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="nad" />
@@ -73,7 +57,6 @@
 
   <!-- Hardware -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="nad" />
-  <project path="hardware/nad/interfaces" name="android_hardware_nad_interfaces" remote="nad" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="nad" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="nad" />
 
@@ -139,12 +122,7 @@
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="nad" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="nad" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="nad" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="nad" />
-  <project path="packages/apps/NusantaraWings" name="android_packages_apps_NusantaraWings" remote="nad" /> 
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nad" /> 
   <project path="packages/apps/Plugins" name="android_packages_apps_Plugins" remote="nad" />
-  <project path="packages/apps/NusantaraPapers" name="android_packages_apps_NusantaraPapers" remote="nad" />  
-  <project path="packages/nusantara/fonts" name="android_packages_nusantara_fonts" remote="wip" />
   <project path="packages/services/OmniJaws" name="crdroidandroid/android_packages_services_OmniJaws" remote="github" revision="11.0"/>
 
   <!-- Prebuilts -->
@@ -152,13 +130,10 @@
   <project path="prebuilts/abi-dumps/ndk" name="android_prebuilts_abi-dumps_ndk" remote="nad" />
   <project path="prebuilts/tools-extras" name="android_prebuilts_tools-extras" remote="nad" />
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
-  <project path="prebuilts/prebuiltapks" name="NusantaraProject/android_prebuilts_prebuiltapks" remote="gitlab" revision="master" />
 
   <!-- Sepolicy -->
-  <project path="device/nad/sepolicy" name="android_device_nad_sepolicy" remote="nad" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="nad" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="nad" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="nad" />
   <project path="device/qcom/common" name="StatiXOS/android_device_qcom_common" remote="github" revision="11"/>
 
   <!-- System -->
@@ -178,8 +153,6 @@
   <project path="system/iorap" name="android_system_iorap" remote="nad" />
 
   <!-- Vendor -->
-  <project path="vendor/nusantara" name="android_vendor_nusantara" remote="nad" />
-  <project path="vendor/themes" name="android_vendor_themes" remote="nad" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="nad" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="nad" />
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="nad" revision="11-pn5xx" />
