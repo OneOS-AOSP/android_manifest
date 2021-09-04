@@ -7,10 +7,6 @@
            revision="11"
            sync-j="16" />
            
-  <default revision="master"
-           remote="origin"
-           sync-j="4" />
-
   <remote  name="ONE-AOSP-GITLAB"
            fetch="git@gitlab.com:OneOS-AOSP/"/>
 
