@@ -3,16 +3,16 @@
 
   <!-- ONEOS AOSP remote -->
   <remote  name="ONE-AOSP"
-           fetch="ssh://git@github.com:OneOS-AOSP"
+           fetch="git@github.com:OneOS-AOSP/"
            revision="11"
            sync-j="16" />
 
   <remote  name="ONE-AOSP-GITLAB"
-           fetch="ssh://git@gitlab.com:OneOS-AOSP"/>
+           fetch="git@gitlab.com:OneOS-AOSP/"/>
 
   <!-- Device remote -->
   <remote  name="ONE-device"
-           fetch="ssh://git@github.com:OneOS-AOSP-Devices"
+           fetch="git@github.com:OneOS-AOSP-Devices/"
            revision="11" />
 
     <!-- Build -->
