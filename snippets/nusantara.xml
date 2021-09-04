@@ -30,14 +30,6 @@
   <remote  name="ONE-device"
            fetch="git@github.com:OneOS-AOSP-Devices"
            revision="11" />
-
-  <!-- Github remote -->
-  <remote  name="github"
-           fetch="https://github.com/" />
-
-  <!-- Gitlab remote -->
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
   
   
   
