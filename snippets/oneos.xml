@@ -6,14 +6,15 @@
            fetch="git@github.com:OneOS-AOSP"
            revision="11"
            sync-j="16" />
-           
+
   <remote  name="ONE-AOSP-GITLAB"
            fetch="git@gitlab.com:OneOS-AOSP"/>
+
   <!-- Device remote -->
   <remote  name="ONE-device"
            fetch="git@github.com:OneOS-AOSP-Devices"
            revision="11" />
-  
+
     <!-- Build -->
   <project path="build/make" name="android_build" remote="ONE-AOSP" >
     <copyfile src="core/root.mk" dest="Makefile" />
