@@ -5,7 +5,7 @@
            fetch="https://android-review.googlesource.com/"/>
   <default revision="refs/tags/android-11.0.0_r40"
            remote="aosp"
-           sync-j="4" />
+           sync-j="16" />
 
   <superproject name="platform/superproject" remote="aosp"/>
   <contactinfo bugurl="go/repo-bug" />
