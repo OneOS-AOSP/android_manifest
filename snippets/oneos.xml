@@ -42,6 +42,7 @@
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ONE-AOSP" />
   <project path="packages/apps/OneOSMenu" name="android_packages_apps_OneOSMenu" remote="ONE-AOSP" /> 
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ONE-AOSP" /> 
+  <project path="packages/apps/Seedvault" name="android_packages_apps_Seedvault" remote="ONE-AOSP" />
   <project path="packages/apps/OneOSPapers" name="android_packages_apps_OneOSPapers" remote="ONE-AOSP" />  
   <project path="packages/oneos/fonts" name="android_packages_oneos_fonts" remote="ONE-AOSP" />
   <project path="packages/apps/GamingMode" name="android_packages_apps_GamingMode" remote="ONE-AOSP" />
