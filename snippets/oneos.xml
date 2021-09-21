@@ -41,6 +41,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="ONE-AOSP" />
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PermissionController" groups="pdk-fs" remote="ONE-AOSP" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ONE-AOSP" />
   <project path="packages/apps/OneOSMenu" name="android_packages_apps_OneOSMenu" remote="ONE-AOSP" /> 
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ONE-AOSP" /> 
