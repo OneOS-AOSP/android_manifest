@@ -48,7 +48,6 @@
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="nad" />
 
   <!-- Frameworks -->
-  <project path="frameworks/native" name="android_frameworks_native" remote="nad" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="nad" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="nad" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="nad" />
@@ -135,12 +134,10 @@
   <project path="device/qcom/common" name="StatiXOS/android_device_qcom_common" remote="github" revision="11"/>
 
   <!-- System -->
-  <project path="system/bt" name="android_system_bt" remote="nad" />
   <project path="system/core" name="android_system_core" remote="nad" />
   <project path="system/media" name="android_system_media" remote="nad" />
   <project path="system/netd" name="android_system_netd" remote="nad" />
   <project path="system/security" name="android_system_security" remote="nad" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="nad" />
   <project path="system/update_engine" name="android_system_update_engine" remote="nad" />
   <project path="system/vold" name="android_system_vold" remote="nad" />
   <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="nad" />

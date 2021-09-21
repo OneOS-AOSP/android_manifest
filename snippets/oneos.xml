@@ -34,6 +34,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="android_frameworks_base" remote="ONE-AOSP-GITLAB" revision="11" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ONE-AOSP" />
 
   <!-- Hardware -->
   <project path="hardware/one/interfaces" name="android_hardware_one_interfaces" remote="ONE-AOSP" />
@@ -55,6 +56,10 @@
   <!-- Sepolicy -->
   <project path="device/one/sepolicy" name="android_device_one_sepolicy" remote="ONE-AOSP" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="ONE-AOSP" />
+  
+  <!-- Sepolicy -->
+  <project path="system/bt" name="android_system_bt" remote="ONE-AOSP" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="ONE-AOSP" />
 
   <!-- Vendor -->
   <project path="vendor/oneos" name="android_vendor_oneos" remote="ONE-AOSP" />
