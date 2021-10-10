@@ -117,7 +117,6 @@
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom_camera" remote="ONE-AOSP" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps" remote="ONE-AOSP" />
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom,pdk" remote="ONE-AOSP" /-->
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="arrow" />
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="ONE-AOSP" />
   <!--project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="ONE-AOSP" />
   <project path="hardware/oneos/interfaces" name="android_hardware_oneos_interfaces" remote="ONE-AOSP" /-->

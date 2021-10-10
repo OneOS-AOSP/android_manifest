@@ -30,7 +30,7 @@ Building the System
 Lunch your device after cloning all device sources if needed.
 
 ```bash
-lunch one_devicecodename-buildtype
+lunch oneos_devicecodename-buildtype
 ```
 
 Start compilation
