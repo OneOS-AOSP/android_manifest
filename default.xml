@@ -18,11 +18,6 @@
            fetch="https://github.com/OneOS-AOSP"
            revision="refs/heads/12" />
 
-  <remote  name="arrow-11.0"
-           fetch="https://github.com/ArrowOS"
-           review="https://review.arrowos.net/"
-           revision="refs/heads/arrow-11.0" />
-
   <remote  name="ONE-devices"
            fetch="https://github.com/OneOS-AOSP-Devices"
            revision="refs/heads/12." />
