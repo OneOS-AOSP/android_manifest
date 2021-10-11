@@ -22,9 +22,9 @@
   <project path="bootable/recovery" name="android_bootable_recovery" remote="ONE-AOSP" />
 
   <!-- device repos -->
-  <project path="device/oneos/sepolicy" name="android_device_oneos_sepolicy" remote="ONEOS-AOSP" />
+  <project path="device/oneos/sepolicy" name="android_device_oneos_sepolicy" remote="ONE-AOSP" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="arrow" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="ONEOS-AOSP" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="ONE-AOSP" />
 
   <!-- external repos -->
   <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="arrow" />
