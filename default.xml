@@ -1118,6 +1118,6 @@
 
   <!-- ArrowOS changes -->
   <include name="remove.xml" />
-  <include name="one.xml" />
+  <include name="oneos.xml" />
 
 </manifest>
