@@ -139,7 +139,7 @@
   <!-- packages repos -->
   <project path="packages/apps/OneOSPrebuilts" name="android_packages_apps_OneOSPrebuilts" remote="ONE-AOSP-GITLAB" clone-depth="1" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ONE-AOSP-GITLAB" revision="11" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ONE-AOSP-GITLAB" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ONE-AOSP-GITLAB" />  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="ONE-AOSP-GITLAB" revision="11" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="ONE-AOSP" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="arrow" />
 
